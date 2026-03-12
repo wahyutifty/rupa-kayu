@@ -27,9 +27,9 @@ export default function Header() {
 
                 {/* Icons */}
                 <div className="flex items-center gap-4">
-                    <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                    <Link href="/search" className="p-2 hover:bg-gray-100 rounded-full transition-colors">
                         <Search className="w-5 h-5" />
-                    </button>
+                    </Link>
                     <Link href="/wishlist" className="p-2 hover:bg-gray-100 rounded-full transition-colors hidden sm:block relative group">
                         <Heart className="w-5 h-5 group-hover:text-red-500 transition-colors" />
                     </Link>

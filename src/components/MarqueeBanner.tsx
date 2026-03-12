@@ -3,27 +3,27 @@
 const items = [
     { text: "Harga Terjangkau", icon: "✦" },
     { text: "Bahan Berkualitas", icon: "✦" },
-    { text: "Pengrajin Lokal Terbaik", icon: "✦" },
+    { text: "Pengrajin Lokal", icon: "✦" },
     { text: "Terpercaya", icon: "✦" },
     { text: "Pengiriman Cepat", icon: "✦" },
     { text: "Garansi Produk", icon: "✦" },
     { text: "Desain Modern", icon: "✦" },
-    { text: "Customisasi Tersedia", icon: "✦" },
+    { text: "Bisa Custom", icon: "✦" },
 ];
 
 // Duplicate for seamless looping
-const doubled = [...items, ...items];
+const doubled = [...items, ...items, ...items];
 
 export default function MarqueeBanner() {
     return (
-        <div className="w-full bg-amber-600 overflow-hidden border-y border-amber-700/30 py-2.5 select-none">
+        <div className="w-full bg-[#1c1008] overflow-hidden py-4 select-none">
             <div className="flex whitespace-nowrap animate-marquee">
                 {doubled.map((item, i) => (
                     <span
                         key={i}
-                        className="inline-flex items-center gap-3 px-8 text-white text-[13px] font-bold uppercase tracking-[0.15em]"
+                        className="inline-flex items-center gap-4 px-10 text-[#c5a47e] text-sm font-black uppercase tracking-[0.2em]"
                     >
-                        <span className="text-amber-300 text-[10px]">{item.icon}</span>
+                        <span className="text-amber-500/50 text-base">{item.icon}</span>
                         {item.text}
                     </span>
                 ))}

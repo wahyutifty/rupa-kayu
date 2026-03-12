@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "Rupa Kayu | Furnitur Premium",
   description: "Temukan furnitur berkualitas tinggi dengan sentuhan pengrajin lokal terbaik. Desain modern, harga terjangkau.",
   manifest: "/manifest.json",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+  },
 };
 
 export default function RootLayout({

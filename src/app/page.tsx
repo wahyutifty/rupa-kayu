@@ -12,14 +12,20 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
-      <Hero />
-      {/* Ticker looping di bawah hero, setelah header fixed */}
+      {/* Container untuk Hero agar tidak tertabrak header fixed */}
+      <div className="pt-16">
+        <Hero />
+      </div>
+      {/* Ticker looping tepat setelah Hero */}
       <MarqueeBanner />
-      <Promo />
-      <ShopTheLook />
-      <Categories />
-      <LatestArticles />
-      <Marketplace />
+
+      <div className="space-y-4">
+        <Promo />
+        <ShopTheLook />
+        <Categories />
+        <LatestArticles />
+        <Marketplace />
+      </div>
       <Footer />
     </main>
   );
